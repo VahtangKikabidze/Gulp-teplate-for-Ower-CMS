@@ -1,0 +1,24 @@
+$openSans: 'Open Sans', sans-serif
+$bold: 700
+$semiBold: 600
+$light: 300
+$regular: 400
+$gotham: 'gotham'
+$fontawesome: "FontAwesome"
+
+// colors
+$color-orange: #ff9933
+$darckSilver: #787878
+$lightSilver: #787878
+$color-blue: #1a5ab9
+$color-lightBlue: #568ee1
+$green: #57b95a
+
+@function calc-rem($px)
+	@return ($px / 16)+rem
+=fs($px)
+	font-size: calc-rem($px)
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1110px
